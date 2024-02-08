@@ -108,19 +108,33 @@ using namespace std;
 //     cout<<count;
 // } 
 
-//fibonnaci series i/p = n, o/p = nth fibonacci number
-int nthFib(int n){
-    int a=0,b=1,fib;
-    for(int i=1;i<=n-2;i++){
-        fib=a+b;
-        a=b;
-        b=fib;
-    }
-    return fib;
+// //fibonnaci series i/p = n, o/p = nth fibonacci number
+// int nthFib(int n){
+//     int a=0,b=1,fib;
+//     for(int i=1;i<=n-2;i++){
+//         fib=a+b;
+//         a=b;
+//         b=fib;
+//     }
+//     return fib;
+// }
+// int main(){
+//     int n,fib;
+//     cin>>n;
+//     fib=nthFib(n);
+//     cout<<fib;
+// }
+
+//function pass by value
+int dummy(int n){
+    n++;
+    cout<<"The number is: "<<n<<endl;
+    return n;
 }
 int main(){
-    int n,fib;
+    int n;
     cin>>n;
-    fib=nthFib(n);
-    cout<<fib;
+    
+    dummy(n);
+    cout<<"The number is: "<<n;
 }
