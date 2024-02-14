@@ -59,23 +59,38 @@ int getSum(int arr[],int size){
     }
     return sum;
 }
-int main(){
-    int n;
-    cout<<"Enter size of the array:"<<endl;
-    cin>>n;
+// int main(){
+//     int n;
+//     cout<<"Enter size of the array:"<<endl;
+//     cin>>n;
 
-    int arr[n];
-    cout<<"Enter elements of the array:"<<endl;
-    for (int i = 0; i < n; i++)
-    {
-        cin>>arr[i];
-    }
+//     int arr[n];
+//     cout<<"Enter elements of the array:"<<endl;
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin>>arr[i];
+//     }
 
-    cout<<"Sum of values of array is: "<<getSum(arr,n)<<endl;
-    cout<<"Maximum value in array is: "<<getMax(arr,n)<<endl;
-    cout<<"Minimum value in array is: "<<getMin(arr,n)<<endl;
+//     cout<<"Sum of values of array is: "<<getSum(arr,n)<<endl;
+//     cout<<"Maximum value in array is: "<<getMax(arr,n)<<endl;
+//     cout<<"Minimum value in array is: "<<getMin(arr,n)<<endl;
 
-    getReverse(arr,n);
-    cout<<"Reverse array is: ";
-    printArray(arr,n);
-}
+//     getReverse(arr,n);
+//     cout<<"Reverse array is: ";
+//     printArray(arr,n);
+// }
+
+//swap alternate elements, [1,2,4,6,7] -> [2,1,6,4,7] OR [1,2,4,6,7,8] -> [2,1,6,4,8,7]
+// void swapAlt(int arr[], int size){
+//     for(int i=0;i<size;i+=2){   //+2 because we want 1-2 to swap then 4-6 to swap not 1-4 to swap 
+//         if(i+1<size){           //to check next element is within array or not
+//             swap(arr[i],arr[i+1]);
+//         }
+//     }
+// }
+// int main(){
+//     int arr[5] = {1,2,4,6,7};
+//     swapAlt(arr,5);
+//     printArray(arr,5);
+// }
+

@@ -13,6 +13,10 @@ Data Types in C++:
 4. float - 4 bytes, Stores fractional numbers, containing one or more decimals. Sufficient for storing 6-7 decimal digits
 5. double - 8 bytes, Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits
 
+pair<int,int> p;
+p.first = ...; 
+p.second = ...;
+
 Ascii values of 'A'=65-90 , 'a-z'=97-122 , '0-9'=48-57
 */
 
