@@ -45,11 +45,11 @@ double morePrecision(int n, int precision, int tempSol) {
 
 int main() {
     int n;
-    cout <<" Enter the number " << endl;
+    cout <<"Enter the number:" << endl;
     cin >> n;
 
     int tempSol = sqrtInteger(n);
-    cout <<" Answer is " << morePrecision(n, 3, tempSol) << endl;
+    cout <<"Answer is:" << morePrecision(n, 3, tempSol) << endl;
 
     return 0;
 }
