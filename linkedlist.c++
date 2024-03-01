@@ -67,7 +67,7 @@ void deleteAtPosition(Node* head,int position){
         temp=temp->next;
     }
     prev->next=temp->next;
-    free(temp);
+    free(temp); 
 }
 void print(Node* &head){
     Node* temp=head;        //so that we don't forget address of first node
